@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Registration Form</string>
+    <string name="nameError">Enter a Valid Name</string>
+    <string name="ageError">Enter a Valid Age</string>
+    <string name="emailError">Enter a Valid Email Address</string>
+    <string name="phoneError">Enter a Valid Phone Number</string>
+</resources>
