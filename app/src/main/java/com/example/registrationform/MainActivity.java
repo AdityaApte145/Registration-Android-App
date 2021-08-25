@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.ValidationStyle;
-import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 awesomeValidation.addValidation(MainActivity.this, R.id.nameText, "[a-zA-Z\\s]+", R.string.nameError);
                 awesomeValidation.addValidation(MainActivity.this, R.id.ageText, "^(0?[1-9]|[1-9][0-9]|[1][1-9][1-9]|200)$", R.string.ageError);
                 awesomeValidation.addValidation(MainActivity.this, R.id.emailText, Patterns.EMAIL_ADDRESS, R.string.emailError);
-                awesomeValidation.addValidation(MainActivity.this, R.id.phoneText,"^\\d{10}$", R.string.phoneError);
+                awesomeValidation.addValidation(MainActivity.this, R.id.phoneText, "^\\d{10}$", R.string.phoneError);
 
                 if (awesomeValidation.validate()) {
                     Toast.makeText(MainActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
